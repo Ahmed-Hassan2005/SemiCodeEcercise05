@@ -1,0 +1,281 @@
+#Form{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--background1);
+}
+
+#Form #FormContainer{
+    position: relative;
+    padding-block: 50px;
+}
+
+/* <----------------------------------Row1----------------------------------> */
+
+#Form #FormContainer #Row1{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#Form #FormContainer #Row1 .col{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Form #FormContainer #Row1 .col img{
+    position: relative;
+}
+
+/* <----------------------------------Row2----------------------------------> */
+
+#Form #FormContainer #Row2{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#Form #FormContainer #Row2 .col{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Form #FormContainer #Row2 .col form{
+    position: relative;
+    width: 100%;
+    background: var(--background2);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#Form #FormContainer #Row2 .col form .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--mainColor);
+}
+
+#Form #FormContainer #Row2 .col form .input{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40px;
+}
+
+#Form #FormContainer #Row2 .col form .input label{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f4f4;
+    color: var(--mainColor);
+    padding-inline: 10px;
+    height: 100%;
+    margin: 0;
+}
+
+#Form #FormContainer #Row2 .col form .input input{
+    position: relative;
+    border-radius: 0;
+    height: 100%;
+}
+
+#Form #FormContainer #Row2 .col form .input .indicationIcon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
+    padding-inline: 10px;
+    height: 100%;
+    margin: 0;
+}
+
+#Form #FormContainer #Row2 .col form .input .indicationIcon i.s7{
+    position: relative;
+    display: none;
+}
+
+#Form #FormContainer #Row2 .col form .input .indicationIcon i.s7.show{
+    display: block;
+}
+
+#Form #FormContainer #Row2 .col form .input .indicationIcon i.wrong{
+    position: relative;
+    display: none;
+}
+
+#Form #FormContainer #Row2 .col form .input .indicationIcon i.wrong.show{
+    display: block;
+    color: red;
+}
+
+#Form #FormContainer #Row2 .col form .input input::placeholder{
+    position: relative;
+    font-weight: 500;
+    color: var(--mainColor);
+}
+
+#Form #FormContainer #Row2 .col form .error{
+    position: relative;
+    display: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8d7da;
+    border-radius: 10px;
+}
+
+#Form #FormContainer #Row2 .col form .error.show{
+    display: block;
+}
+
+#Form #FormContainer #Row2 .col form button{
+    position: relative;
+}
+
+#Form #FormContainer #Row2 .col form button#Add{
+    display: block;
+}
+
+#Form #FormContainer #Row2 .col form button#Add.hide{
+    display: none;
+}
+
+#Form #FormContainer #Row2 .col form button#Edit{
+    display: none;
+}
+
+#Form #FormContainer #Row2 .col form button#Edit.show{
+    display: block;
+}
+
+#Form #FormContainer #Row2 .col form button#Back{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    color: #198754;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#Form #FormContainer #Row2 .col form button#Back.show{
+    display: block;
+}
+
+/* <----------------------------------Row3----------------------------------> */
+
+#Form #FormContainer #Row3{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#Form #FormContainer #Row3 .col{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40px;
+    padding: 0;
+}
+
+#Form #FormContainer #Row3 .col label{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f4f4;
+    color: var(--mainColor);
+    padding-inline: 10px;
+    height: 100%;
+    margin: 0;
+}
+
+#Form #FormContainer #Row3 .col input{
+    position: relative;
+    border-radius: 0;
+    height: 40px;
+}
+
+#Form #FormContainer #Row3 .col input::placeholder{
+    position: relative;
+    font-weight: 500;
+    color: var(--mainColor);
+}
+
+/* <----------------------------------Row4----------------------------------> */
+
+#Form #FormContainer #Row4{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#Form #FormContainer #Row4 .col{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Form #FormContainer #Row4 .col #Messege{
+    position: relative;
+    display: none;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    border-radius: 10px;
+}
+
+#Form #FormContainer #Row4 .col table{
+    position: relative;
+    border-radius: 10px;
+}
+
+#Form #FormContainer #Row4 .col table.hide{
+    display: none;
+}
+
+#Form #FormContainer #Row4 .col #Messege.show{
+    display: block;
+}
+
+#Form #FormContainer #Row4 .col table thead{
+    position: relative;
+    background-color: #212529;
+}
+
+#Form #FormContainer #Row4 .col table thead tr{
+    position: relative;
+}
+
+#Form #FormContainer #Row4 .col table thead tr th{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+#Form #FormContainer #Row4 .col table tbody tr.hide{
+    display: none;
+}
+

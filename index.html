@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ahmed Hassan : Exercise_05</title>
+    <link rel="icon" href="./imgs/icon.png">
+
+    <!--------------------------------------metas------------------------------------------->
+
+    <meta charset="UTF-8"> <!--Allows Arabic, English, symbols and emojis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Allows the website to be responsive on different devices, Tells browser to match screen width, Sets initial zoom level-->
+    <meta name="description" content="Learn web development with practical examples."> <!--Appears in Google search results, Helps SEO ranking-->
+    <meta name="author" content="Ahmed Hassan"> <!--Tells search engines who created the page-->
+    <!--Used when sharing on social media like facebook, linkedin, whatsapp, etc-->
+    <meta property="og:title" content="My Website">
+    <meta property="og:description" content="Best site ever">
+    <meta property="og:image" content="image.jpg">
+
+    <!--------------------------------------CSS------------------------------------------->
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responses.css">
+</head>
+<body>
+
+    <section id="Form">
+        <div id="FormContainer" class="container">
+            <div id="Row1" class="row justify-content-center">
+                <div class="col col-8 col-sm-5 col-md-3 col-lg-2">
+                    <img class="img-fluid" src="./imgs/form.png" alt="">
+                </div>
+            </div>
+            <div id="Row2" class="row justify-content-center">
+                <div class="col col-12 col-sm-9 col-md-7 col-lg-5">
+                    <form action="">
+                        <div class="title">Students System</div>
+                        <div class="input mb-3">
+                            <label for="FirstName" class="form-label"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name *" autocomplete="off" required>
+                            <div class="indicationIcon">
+                                <i class="fa-solid fa-check s7"></i>
+                                <i class="fa-solid fa-circle-exclamation wrong"></i>
+                            </div>
+                        </div>
+                        <div id="Error1" class="error mb-3">
+
+                        </div>
+                        <div class="input mb-3">
+                            <label for="LastName" class="form-label"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name *" autocomplete="off" required>
+                            <div class="indicationIcon">
+                                <i class="fa-solid fa-check s7"></i>
+                                <i class="fa-solid fa-circle-exclamation wrong"></i>
+                            </div>
+                        </div>
+                        <div id="Error2" class="error mb-3">
+
+                        </div>
+                        <div class="input mb-3">
+                            <label for="Email" class="form-label"><i class="fa-solid fa-envelope"></i></label>
+                            <input type="text" class="form-control" id="Email" name="Email" placeholder="Email *" autocomplete="off" required>
+                            <div class="indicationIcon">
+                                <i class="fa-solid fa-check s7"></i>
+                                <i class="fa-solid fa-circle-exclamation wrong"></i>
+                            </div>
+                        </div>
+                        <div id="Error3" class="error mb-3">
+                            
+                        </div>
+                        <div class="input mb-3">
+                            <label for="Age" class="form-label"><i class="fa-solid fa-hashtag"></i></label>
+                            <input type="text" class="form-control" id="Age" name="Age" placeholder="Age *" autocomplete="off" required>
+                            <div class="indicationIcon">
+                                <i class="fa-solid fa-check s7"></i>
+                                <i class="fa-solid fa-circle-exclamation wrong"></i>
+                            </div>
+                        </div>
+                        <div id="Error4" class="error mb-3">
+                            
+                        </div>
+                        <div class="input mb-3">
+                            <label for="Phone" class="form-label"><i class="fa-solid fa-mobile-button"></i></label>
+                            <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Phone *" autocomplete="off" required>
+                            <div class="indicationIcon">
+                                <i class="fa-solid fa-check s7"></i>
+                                <i class="fa-solid fa-circle-exclamation wrong"></i>
+                            </div>
+                        </div>
+                        <div id="Error5" class="error mb-3">
+                            
+                        </div>
+                        <button type="button" id="Add" class="btn btn-success w-100">Add</button>
+                        <button type="button" id="Edit" class="btn btn-info text-white w-100">Edit</button>
+                        <button type="button" id="Back" class="btn"><i class="fa-solid fa-rotate-left back"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div id="Row3" class="row justify-content-center">
+                <div class="col col-8 col-md-5 col-lg-3">
+                    <label id="SearchLabel" for="SearchInput" class="form-label"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" class="form-control" id="SearchInput" name="SearchInput" placeholder="Search..." autocomplete="off">
+                </div>
+            </div>
+            <div id="Row4" class="row justify-content-center">
+                <div class="col col-12">
+                    <div id="Messege">There are no data</div>
+                    <div class="table-responsive w-100">
+                        <table id="Table" class="table table-striped rounded-2 overflow-hidden">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Age</th>
+                                    <th>Phone</th>
+                                    <th>Option</th>
+                                </tr>
+                            </thead>
+                            <tbody id="TableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--------------------------------------javaScript------------------------------------------->
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/MyMath.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
