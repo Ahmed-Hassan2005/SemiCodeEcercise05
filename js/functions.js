@@ -105,7 +105,7 @@ function addEventsToSearch() {
         let TableRows = document.querySelectorAll("#Form #FormContainer #Row4 .col table tbody tr");
         let counter = 0;
         for(let i = 0; i < TableRows.length; i++) {
-            let Student = JSON.parse(localStorage.getItem(localStorage.key(i)));
+            let Student = Students[i];
 
             let idExists = Student.id.toString().includes(SearchedValue);
             let FirstNameExists = Student.FirstName.toLowerCase().includes(SearchedValue);
@@ -266,3 +266,4 @@ function clearErrorAndSuccess(){
     }
     ignoreBlur = false;
 }
+
